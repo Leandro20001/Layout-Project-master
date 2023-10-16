@@ -1,0 +1,302 @@
+html,body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  transition: 500ms;
+  overflow-x: hidden;
+}
+
+.hide{
+  opacity: 0;
+  transition: 250ms;
+}
+
+nav{
+  text-align: center;
+  box-sizing: border-box;
+  padding: 4px;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 32px;
+  display: block;
+  background-color: rgba(231, 231, 231, 0.686);
+}
+nav>a{
+  transition: 300ms;
+  margin: auto 4% auto 4%;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(43, 43, 43);
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+nav>a:hover{
+ font-size: 2.2em;
+ color: black;
+}
+
+b{
+  transition: 250ms;
+  display: block;
+  width: fit-content;
+  background-color: black;
+  box-shadow: 0 0 8px black;
+  color: aliceblue;
+  border-radius: 0 16px 0 16px;
+  box-sizing: border-box;
+  padding: 8px;
+  margin:0 12px 16px 12px;
+}
+#bigSpan{
+  transition: 250ms;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin: 8px;
+  font-size: 3.5rem;
+}
+
+#changeProduct{
+  margin: auto auto 16px auto;
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 16px;
+}
+#changeProduct>button{
+  transition: 250ms;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: black;
+  color: aliceblue;
+  border: 0px;
+  box-sizing: border-box;
+  border-radius: 36px;
+  box-shadow: 0 0 6px rgb(127, 127, 127);
+  padding: 12px;
+  height: 10vh;
+  width:140px;
+}
+
+#productInfo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: black;
+  width:94%;
+  height: 94%;
+  border-radius: 36px;
+  
+}
+.franchiseSpan{
+  width: 26%;
+  min-width: fit-content;
+  margin: auto;
+  border-radius: 32px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  padding: 12px;
+  display: block;
+  background-color: rgb(19, 19, 19);
+  box-shadow: 0 0 6px black;
+  color: aliceblue;
+  letter-spacing: 4px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.6em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#changeProduct>button:hover{
+  transition: 300ms;
+  box-shadow: 0 0 10px black;
+  border-radius: 0px;
+  scale: 1.2;
+  margin: 0 4px 0 4px;
+}
+#changeProduct>button:nth-child(2){
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+#changeProduct>button:nth-child(3){
+  background-color: rgb(63, 63, 63);
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+}
+@keyframes imgAni{
+  0%{
+    opacity: 0;
+    transform: translateX(+140px);
+  }
+}
+#mainImg{
+  top: 32px;
+  cursor: pointer;
+  position: relative;
+  transition: 400ms;
+  box-sizing: border-box;
+  padding: 4px;
+  width: 100vw;
+  max-width: 620px;
+  margin: auto auto 120px auto;
+  animation-name: imgAni;
+  animation-duration: 1s;
+}
+
+#mainImg:hover{
+  box-shadow: 0 0 4px rgba(56, 56, 56, 0.773);
+  transition: 700ms;
+  scale: 1.1;
+  border-radius: 24px;
+}
+
+#mainImg>img{
+  animation-name: imgAni;
+  width: 100%;
+  position: relative;
+  opacity: 80%;
+}
+
+.samsungText{
+  display: grid;
+  margin: auto;
+  box-sizing: border-box;
+  grid-template-columns:65% 1fr;
+  padding: 2px;
+  height: fit-content;
+  width: 100vw;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: black;
+  box-shadow: 0 0 12px rgb(116, 116, 116);
+  overflow-x: auto;
+}
+
+#samsungSection{
+  grid-column: 1;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 255, 255);
+}
+
+#samsungImg{
+  width: 80%;
+  height: 76%;
+  display: block;
+  margin:32px auto;
+  position: relative;
+  background-color: aliceblue;
+}
+#samsungImg>iframe{
+  width: 100%;
+  height: 100%;
+}
+
+
+.samsungText>p{
+  grid-column: 2;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size:20px;
+  background-color: rgb(15, 15, 15);
+  color: aliceblue;
+  height:fit-content;
+  box-sizing:border-box;
+  padding: 8px;
+}
+
+#appleContainer{
+  box-sizing: border-box;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: 16% 1fr;
+  margin:auto;
+  top: 260%;
+  background-color: rgb(255, 255, 255);
+  min-height: 80vh;
+  height:fit-content;
+  width:100%;
+}
+#appleContainer>.franchiseSpan{
+  height: fit-content;
+  width: 64%;
+  background-color: rgb(233, 233, 233);
+  box-sizing: border-box;
+  padding: 12px;
+  color: rgb(121, 121, 121);
+  grid-row: 1;
+  margin: 0 auto;
+}
+#appleContainer>#appleSection1{
+  margin:0 auto;
+  grid-column: 1;
+  text-align: center;
+  background-color: rgb(243, 243, 243);
+  font-size: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+#appleContainer #appleSection2{
+  text-align: center;
+  font-size: 1.4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  grid-column: 2;
+  grid-row: 2;
+  box-sizing: border-box;
+  padding: 0 16px;
+  height: fit-content;
+  background-color: rgb(234, 234, 234);
+}
+#appleSection2>#appleIframe{
+  width: 100%;
+}
+#appleSection2>#appleIframe>iframe{
+  width: 100%;
+}
+
+#appleSlider{
+  justify-content: center;
+  margin: auto;
+  grid-column: 1;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  height: 480px;
+  max-width: 720;
+}
+#appleSlider>img{
+  position: relative;
+  width: 100%;
+  border: 1px rgb(146, 146, 146) solid;
+
+}
+
+#appleLogo{
+  margin: auto;
+  max-width: 280px;
+  box-sizing: border-box;
+  padding: 24px;
+  grid-row: 2;
+  grid-column: 2;
+}
+#appleLogo>img{
+  width:100% ;
+  height: 100%;
+}
+
+
+
+
