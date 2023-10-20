@@ -1,5 +1,5 @@
 html,body{
-  height: 100%;
+  height:100%;
   padding: 0;
   margin: 0;
   transition: 500ms;
@@ -262,6 +262,7 @@ b{
   background-color: rgb(234, 234, 234);
 }
 #appleSection2>#appleIframe{
+  grid-column: 1;
   width: 100%;
 }
 #appleSection2>#appleIframe>iframe{
@@ -295,6 +296,49 @@ b{
 #appleLogo>img{
   width:100% ;
   height: 100%;
+}
+@media (max-width:1120px){
+  #appleContainer{
+    grid-template-columns: 100% 100% 100%;
+    grid-template-rows: auto;
+  }
+  
+  #appleContainer>.franchiseSpan{
+    height: fit-content;
+    width: 64%;
+    box-sizing: border-box;
+    padding: 14px;
+    color: rgb(121, 121, 121);
+    margin-bottom: 70px;
+    grid-row: 1;
+  }
+
+  #appleContainer>#appleSection1{
+    position: relative;
+    top: 42px;
+    grid-row: 2;
+    margin:auto;
+  }
+
+  #appleSection2{
+    position:relative;
+    background-color: aqua;
+  }
+
+  #appleSection2>#appleIframe{
+    position:absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-150%,70%);
+    grid-row: 3;
+    z-index: 3;
+  }
+
+  #appleSection2>#appleIframe>iframe{
+    z-index: 3;
+    width: 100%;
+    height: 500px;
+  }
 }
 
 
